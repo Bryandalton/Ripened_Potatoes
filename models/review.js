@@ -11,18 +11,9 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        movie_title: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         description: {
             type: DataTypes.STRING,
             allowNull: false,
-        },
-        date_created: {
-            type: DataTypes.DATE,
-            allowNull: false,
-            defaultValue: DataTypes.NOW,
         },
         rating: {
             type: DataTypes.INTEGER,
@@ -41,7 +32,7 @@ Review.init(
     },
     {
         sequelize,
-        timestamps: false,
+        timestamps: true,
         freezeTableName: true,
         underscored: true,
         modelName: 'review',  
