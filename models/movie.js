@@ -41,3 +41,5 @@ Movie.init({
     modelName: 'movie',
   }
 );
+
+module.exports = Movie;
