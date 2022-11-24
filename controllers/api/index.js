@@ -6,5 +6,6 @@ const reviewRoutes = require('./reviewRoutes')
 router.use('/users', userRoutes);
 router.use('/movies', movieRoutes);
 router.use('/reviews', reviewRoutes);
+router.use('/tags', tagRoutes)
 
 module.exports = router;
