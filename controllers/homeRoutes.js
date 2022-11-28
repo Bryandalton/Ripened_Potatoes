@@ -4,7 +4,7 @@ const withAuth = require("../utils/auth");
 // const { move } = require("./api");
 
 router.get("/", async (req, res) => {
-    req.session.logged_in = true  //remove before production
+    // req.session.logged_in = true  //remove before production
   try {
     const movieData = await Movie.findAll({
       include: [
