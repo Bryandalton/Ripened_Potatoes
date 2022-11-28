@@ -1,38 +1,41 @@
 <!-- log in and sign up boxes -->
 <div class="loginsection">
-    <form>
-    <div>
-      <!--POTATO PIC?-->
-      LOGIN
-    </div>
-  
-    <div class="container">
-      <label for="username"><b>Username</b></label><br>
-      <input type="text" placeholder="Enter Username" name="username"><br>
-  
-      <label for="password"><b>Password</b></label><br>
-      <input type="password" placeholder="Enter Password" name="password"><br>
-  
-      <button type="submit">Login</button>
-    </div>
+      <div>
+        <!--POTATO PIC?-->
+        LOGIN
+      </div>
+     <form class="login-form">
+      <div class="container">
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Enter Username" name="username" id="email-login"><br>
+    
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" id="password-login"><br>
+    
+        <button type="submit">Login</button>
+      </div>
     </form>
 </div>
 
 <div class="signupsection">
-    <form>
-    <div>
-      <!--OTHER POTATO PIC?-->
-      SIGN UP
-    </div>
-  
-    <div class="container">
-      <label for="username"><b>Username</b></label><br>
-      <input type="text" placeholder="Enter Username" name="username"><br>
-  
-      <label for="password"><b>Password</b></label><br>
-      <input type="password" placeholder="Enter Password" name="password"><br>
-  
-      <button type="submit">Sign Up</button>
-    </div>
+      <div>
+        <!--OTHER POTATO PIC?-->
+        SIGN UP
+      </div>
+    <form class="signup-form">
+      <div class="container">
+        <label for="username"><b>Username</b></label><br>
+        <input type="text" placeholder="Enter Username" name="username" id="username-signup"><br>
+
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" placeholder="Enter Email" name="email" id="email-signup"><br>
+    
+        <label for="password"><b>Password</b></label><br>
+        <input type="password" placeholder="Enter Password" name="password" id="password-signup"><br>
+    
+        <button type="submit">Sign Up</button>
+      </div>
     </form>
 </div>
+
+<script src="./js/login.js"></script>
