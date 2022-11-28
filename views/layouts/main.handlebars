@@ -9,7 +9,11 @@
 </head>
 
 <body>
-<header>Ripened Potatoes</header>
+<header>
+    <a href="/">
+    <img src="/images/cutePotato.png" alt="cute potato" id="headerImg"> </a>
+    Ripened Potatoes
+    </header>
 <nav> 
     <ul>
         <li><a href="login">LOG IN</a></li> <!--make togglable to log out button-->
@@ -25,5 +29,8 @@
     <p> taters </p>
 </main>
 <footer>By Sophie Carr, Bryan Dalton, and Bernie Migo</footer>
+{{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </body>
 </html>

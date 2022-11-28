@@ -1,5 +1,22 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+//gets all users for insomnia testing
+router.get('/', async (req, res) => {
+  try{
+    const userData = await User.findAll()
+    if(!userData){
+    res
+      .status(400)
+      .json({message: 'No users'})
+    } 
+    res.json(userData)
+  }
+  
+  catch(err){
+    res.status(500).json(err)
+  }
+});
+
 
 //creates a new user
 router.post('/', async (req, res) => {
