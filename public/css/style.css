@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color:#817d6b;
 }
 header {
     background-color: peachpuff;
@@ -17,8 +18,8 @@ header h1 {
 }
 
 #headerImg {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 ul {
@@ -43,7 +44,28 @@ li a:hover {
 }
 
 footer {
-    background-color:darkolivegreen;
-    color: white;
-    padding: 15px;
+    background-color:#504a3e;
+    color: #bd8e5e;
+    font-size: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
 }
+
+nav a:hover {
+    background-color: #1d3f3f;
+    color: #bd8e5e;
+}
+
+film-card-square.mdl-card {
+    width: 320px;
+    height: 320px;
+  }
+film-card-square > .mdl-card__title {
+    color: bd8e5e;
+    background-color: #1D3F3F;
+  }
