@@ -23,7 +23,7 @@ class User extends Model {
       email: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true,
+        //unique: true,
         validate: {
           isEmail: true,
         },

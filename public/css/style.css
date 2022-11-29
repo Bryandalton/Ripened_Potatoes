@@ -69,3 +69,10 @@ film-card-square > .mdl-card__title {
     color: bd8e5e;
     background-color: #1D3F3F;
   }
+
+.loginsection {
+    column-count: 2;
+    column-rule-style: solid;
+    column-rule-color: #504a3e;
+    text-align: center;
+}
