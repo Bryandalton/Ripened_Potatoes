@@ -12,34 +12,25 @@
 </head>
 
 <body>
-<div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header" style="background-color:black">
-      <div class="mdl-layout__header-row">
-        
-        <a href="/">
-            <span class="mdl-layout-title" style="color:#bd8e5e">
-            Ripened Potatoes  <img src="/images/cutePotato.png" alt="cute potato" id="headerImg">
-            </span>
-        </a>
-
-        <div class="mdl-layout-spacer"></div>
-
-        <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="post" style="color:#bd8e5e">POST</a>
-            <a class="mdl-navigation__link" href="films" style="color:#bd8e5e">FILMS</a>
-            {{#if logged_in}}
-            <a class="mdl-navigation__link" href="profile" style="color:#bd8e5e">PROFILE</a>
-            <button class="no-button" id="logout">logout</button>
-            {{else}}
-            <a class="mdl-navigation__link" href="login" style="color:#bd8e5e">LOGIN</a>
-            {{/if}}
-            
-        </nav>
-      </div>
+<header>
+    <a href="/">
+    <img src="/images/cutePotato.png" alt="cute potato" id="headerImg"> </a>
+    Ripened Potatoes
     </header>
-</div>
-
-<main class="mdl-layout__content" style="margin-top:50px; margin-bottom:5vh;">
+<nav> 
+    <ul>
+        {{#if logged_in}}
+        <li><a href="/profile">profile</a></li>
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <li><a href="/login">LOG IN</a></li>
+        {{/if}}
+            
+        <li><a href="/movie">FILMS</a></li>
+        <li><a href="/review">MAKE POST</a></li>
+    </ul>
+</nav>
+<main>
 
     {{{body}}}
 
