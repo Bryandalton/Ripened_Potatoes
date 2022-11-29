@@ -23,7 +23,8 @@ Review.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                isIn: [['rotten', 'ripe']]
+                min: 1,
+                max: 10,
             }
         },
         user_id: {
@@ -31,7 +32,14 @@ Review.init(
             references: {
               model: 'user',
               key: 'id',
-            },
+            }
+        },
+        movie_id: {
+            type: DataTypes.INTEGER,
+            references: {
+              model: 'movie',
+              key: 'id',
+            }
         },
     },
     {
