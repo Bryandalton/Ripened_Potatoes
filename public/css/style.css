@@ -2,7 +2,12 @@ body {
     margin: 0;
     background-color:#817d6b;
 }
-
+header {
+    background-color: peachpuff;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+}
 header a{
     text-decoration: none;
 }
@@ -46,7 +51,7 @@ footer {
     width: 100%;
     bottom: 0;
     height: 100px;
-    padding: 20px; 
+    padding: 20px;
     justify-content: center;
     text-align: center;
 }
