@@ -11,6 +11,10 @@ Review.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        title: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         description: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -19,7 +23,7 @@ Review.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                len: [1, 10]
+                isIn: [['rotten', 'ripe']]
             }
         },
         user_id: {

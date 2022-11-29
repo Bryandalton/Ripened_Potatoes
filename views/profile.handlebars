@@ -1,14 +1,45 @@
 <!-- profile: username, email, password, potato? -->
-<section class="profilepage">
-
-    <!-- a href=" "-->
-
-    <div><!--POTATO PIC?--></div>
+<div class="profilepage">
+    <div><h2>Welcome, {{name}}!</h2></div>
 
     <div>
-    {{!-- Username: {{name}}
-    Email: {{email}}
-    Password: {{password}}--}}
+        <h3>Create a New Review</h3>
+
+        <form class="new-review-form">
+            <div>
+                <label>Review Title</label><br>
+                <input type="text" id="review-title" name="review-title" placeholder="Review Title">
+            </div>
+            <div>
+                <label>Review Description</label><br>
+                <textarea id="review-description" name="review-description" placeholder="Write your review here..."></textarea>
+            </div>
+            <div>
+                <p>Would you say this film is rotten or ripe?</p>
+                <select id="review-rating" name="rating">
+                    <option value="rotten">Rotten</option>
+                    <option value="ripe">Ripe</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 
-</section>
+{{#if reviews.length}}
+  <div class="review-list">
+    <h3>My Reviews:</h3>
+
+    {{#each reviews as |review|}}
+    <div>
+      <div>
+        <h4><a href="/review/{{review.id}}">{{review.title}}</a></h4>
+      </div>
+      <div>
+        <button data-id="{{review.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+
+</div>
