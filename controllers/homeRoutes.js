@@ -17,12 +17,12 @@ router.get("/", async (req, res) => {
         },
       ],
     });
-    res.render('homepage');
-    // const movies = movieData.map((movie) => movie.get({ plain: true }));
-    // res.render("homepage", {
-    //   movies,
-    //   //login?
-    // });
+    // res.render('homepage');
+    const movies = movieData.map((movie) => movie.get({ plain: true }));
+    res.render("homepage", {
+      movies,
+      //login?
+    });
   } catch (err) {
     res.status(500).json(err);
   }
