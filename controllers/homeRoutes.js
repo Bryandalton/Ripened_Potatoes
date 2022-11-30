@@ -4,7 +4,6 @@ const withAuth = require("../utils/auth");
 // const { move } = require("./api");
 
 router.get("/", async (req, res) => {
-    // req.session.logged_in = true  //remove before production
   try {
     const movieData = await Movie.findAll({
       include: [
@@ -35,7 +34,13 @@ router.get("/movie/:id", async (req, res) => {
       include: [
         {
           model: Review,
-          attributes: ["description", "rating"],
+          attributes: ["title", "description", "rating", "user_id"],
+          include: [
+            {
+              model: User,
+              attributes: ["name"]
+            }
+          ]
         },
         {
           model: Tag,
@@ -43,7 +48,10 @@ router.get("/movie/:id", async (req, res) => {
         },
       ],
     });
+
     const movie = movieData.get({ plain: true });
+    console.log('movie is', movie);
+
     res.render("movie", {
       ...movie,
       logged_in: req.session.logged_in,

@@ -3,6 +3,22 @@ const router = require('express').Router();
 const { Movie } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/', async (req, res) => {
+  try{
+    const movieData = await Movie.findAll()
+    if(!movieData){
+    res
+      .status(400)
+      .json({message: 'No movies'})
+    } 
+    res.json(movieData)
+  }
+  
+  catch(err){
+    res.status(500).json(err)
+  }
+});
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newMovie = await Movie.create({

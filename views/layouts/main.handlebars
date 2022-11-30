@@ -1,56 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-    <meta charset="utf-8">
-    <meta name = "viewport" content "width=device-width, initial-scale=1.0">
-    <title> RIPENED POTATOES </title>
-    <link rel="icon" href="/images/cutePotato.png">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-deep_purple.min.css" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content "width=device-width, initial-scale=1.0">
+  <title> RIPENED POTATOES </title>
+  <link rel="icon" href="/images/cutePotato.png">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-deep_purple.min.css" />
 </head>
 
 <body>
-<div class="mdl-layout mdl-js-layout">
-    <header class="mdl-layout__header mdl-layout__header--scroll" style="background-color:black">
+  {{!-- <div class="mdl-layout mdl-js-layout"> --}}
+    <header class="mdl-layout__header" style="background-color:black">
       <div class="mdl-layout__header-row">
-        
+
         <a href="/">
-            <span class="mdl-layout-title" style="color:#bd8e5e">
-            Ripened Potatoes  <img src="/images/cutePotato.png" alt="cute potato" id="headerImg">
-            </span>
+          <span class="mdl-layout-title" style="color:#bd8e5e">
+            Ripened Potatoes <img src="/images/cutePotato.png" alt="cute potato" id="headerImg">
+          </span>
         </a>
 
         <div class="mdl-layout-spacer"></div>
 
         <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="post" style="color:#bd8e5e">POST</a>
-            <a class="mdl-navigation__link" href="films" style="color:#bd8e5e">FILMS</a>
-            {{#if logged_in}}
-            <a class="mdl-navigation__link" href="profile" style="color:#bd8e5e">PROFILE</a>
-            <button class="no-button" id="logout">logout</button>
-            {{else}}
-            <a class="mdl-navigation__link" href="login" style="color:#bd8e5e">LOGIN</a>
-            {{/if}}
-            
+          <a class="mdl-navigation__link" href="post" style="color:#bd8e5e">POST</a>
+          <a class="mdl-navigation__link" href="films" style="color:#bd8e5e">FILMS</a>
+          {{#if logged_in}}
+          <a class="mdl-navigation__link" href="profile" style="color:#bd8e5e">PROFILE</a>
+          <button class="no-button" id="logout">logout</button>
+          {{else}}
+          <a class="mdl-navigation__link" href="login" style="color:#bd8e5e">LOGIN</a>
+          {{/if}}
+
         </nav>
       </div>
     </header>
-</div>
+  {{!-- </div> --}}
 
-<main>
+  <main>
 
     {{{body}}}
 
     <p> taters </p>
-</main>
-
-<footer>By Sophie Carr, Bryan Dalton, and Bernie Migo</footer>
-{{#if logged_in}}
+  </main>
+  <footer>By Sophie Carr, Bryan Dalton, and Bernie Migo</footer>
+  {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
-{{!--Test--}}
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  {{!--Test--}}
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
+
 </html>

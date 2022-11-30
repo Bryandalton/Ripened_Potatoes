@@ -1,8 +1,15 @@
 <!-- page for movie with its tags and reviews -->
 <section>
-    <header>title</header>
+    <h2 class="movie-title-line">{{!title}}Pulp Fiction</h2>
     <!--movie poster-->
-    <p>tags</p>
+    <p>{{!description}} A hitman reconsiders his life of crime after witnessing a miraculous occurrence.</p>
 
     <!--reviews: user_id, description, rating-->
-</section>
+    {{#each reviews as |review|}}
+    <div>
+        <p class="review-title-line">{{!review.title}} I love this movie! by {{!user.name}} tarentino-fan23</p>
+        <p>{{!review.description}}Great film! Tarentino at his best!!!</p>
+        <p></p>
+    </div>
+    {{/each}}
+</section> 
