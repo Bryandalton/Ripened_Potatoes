@@ -1,14 +1,9 @@
 body {
     margin: 0;
-    padding:0;
     background-color:#817d6b;
+    height: 90vh;
 }
-header {
-    background-color: peachpuff;
-    color: white;
-    padding-top: 10px;
-    padding-left: 10px;
-}
+
 header a{
     text-decoration: none;
 }
@@ -29,35 +24,15 @@ header {
     max-height: 50px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: peachpuff;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    float: right;
-    padding: 14px 16px;
-}
-
-li a:hover {
-    background-color: white;
-    color: peachpuff;
-}
-
 footer {
     background-color:#504a3e;
     color: #bd8e5e;
     font-size: 30px;
     width: 100%;
     bottom: 0;
-    height: 100px;
-    padding: 20px;
+    height: 5vh;
+    padding-top: 20px;
+    position: relative;
     justify-content: center;
     text-align: center;
 }
