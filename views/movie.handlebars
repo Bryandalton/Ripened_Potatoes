@@ -1,15 +1,14 @@
 <!-- page for movie with its tags and reviews -->
 <section>
-    <h2 class="movie-title-line">{{!title}}Pulp Fiction</h2>
+    <h2 class="movie-title-line">{{title}}</h2>
     <!--movie poster-->
-    <p>{{!description}} A hitman reconsiders his life of crime after witnessing a miraculous occurrence.</p>
+    <p>{{description}}</p>
 
     <!--reviews: user_id, description, rating-->
     {{#each reviews as |review|}}
-    <div>
-        <p class="review-title-line">{{!review.title}} I love this movie! by {{!user.name}} tarentino-fan23</p>
-        <p>{{!review.description}}Great film! Tarentino at his best!!!</p>
-        <p></p>
+    <div class="review-box">
+        <p class="review-title-line">{{review.title}} by {{user.name}} </p>
+        <p>{{review.description}} a generic review</p>
     </div>
     {{/each}}
 </section> 
