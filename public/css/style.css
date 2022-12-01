@@ -140,11 +140,11 @@ input[type=password]:focus{
 footer {
     /* background-color:#2F2C37; */
     /* background :url("/images/taters.jpg"); */
+    /* removed bottom 0 */
     color: #bd8e5e;
     font-size: 20px;
     width: auto;
-    bottom: 0;
-    height: 10vh;
+    height: 6vh;
     padding-top: 20px;
     position: relative;
     justify-content: center;
@@ -179,7 +179,7 @@ film-card-square > .mdl-card__title {
     text-align: center;
     font-family: 'Lato', sans-serif;
     margin-top:70px;
-    height: 60vh;
+    height: 73.5vh;
 }
 
 
