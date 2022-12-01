@@ -25,7 +25,7 @@
                 </select>
             </div> <br>
 
-            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color:#1d3f3f; color: #bd8e5e;">Post</button>
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"style="background-color:#1d3f3f; color: #bd8e5e">Post</button>
         </form>
     </div>
 
@@ -36,14 +36,14 @@
     {{#each reviews as |review|}}
     <div>
       <div>
-        <h4><a href="/movie/{{movie_id}}">{{review.title}}</a></h4>
+        <h4><a style ="color: #bd8e5e;"href="/movie/{{movie_id}}">{{review.title}}</a></h4>
       </div>
       <div>
-        <button data-id="{{review.id}}">DELETE</button>
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" data-id="{{review.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
   </div>
   {{/if}}
-</div>
+</div> <br>
 <script src="/js/movie.js"></script>
