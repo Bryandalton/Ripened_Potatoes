@@ -1,0 +1,23 @@
+[
+    {
+        "title": "GREAT!(with friends)",
+        "description": "Great popcorn movie to riff on with friends.",
+        "rating": 5,
+        "user_id": 1,
+        "movie_id": 1 
+    },
+    {
+        "title": "Terrible!!!",
+        "description": "Just Awful, save yourself the time. DON'T WATCH" ,
+        "rating": 1,
+        "user_id": 2,
+        "movie_id": 2
+    },
+    {
+        "title": "REALLY WEIRD",
+        "description": "Not a fan of this movie, and the implications just make it worse...",
+        "rating": 3,
+        "user_id": 3,
+        "movie_id": 3
+    }
+]
