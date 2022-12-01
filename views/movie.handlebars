@@ -3,12 +3,14 @@
     <h2 class="movie-title-line">{{title}}</h2>
     <!--movie poster-->
     <p>{{description}}</p>
+    <a href="/add_review/{{id}}">Write a review about this movie</a>
 
     <!--reviews: user_id, description, rating-->
     {{#each reviews as |review|}}
     <div class="review-box">
         <p class="review-title-line">{{title}} by {{user.name}} </p>
         <p>{{description}}</p>
+        
     </div>
     {{/each}}
 </section> 
