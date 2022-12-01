@@ -80,7 +80,7 @@ footer {
     background-color:#2F2C37;
     color: #bd8e5e;
     font-size: 20px;
-    width: 100%;
+    width: auto;
     bottom: 0;
     height: 10vh;
     padding-top: 20px;
@@ -118,6 +118,7 @@ film-card-square > .mdl-card__title {
 
 main {
     font-family: 'Lato', sans-serif;
+    padding-left: 20px;
 }
 
 .profilepage h2 {
