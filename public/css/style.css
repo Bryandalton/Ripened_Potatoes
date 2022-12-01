@@ -269,4 +269,5 @@ main {
 .movie h2 {
     color: #3A3222;
     font-family: 'Lato', sans-serif;
+    font-weight: bolder;
 }
