@@ -1,7 +1,4 @@
 const withAuth = (req, res, next) => {
-//test credentials:
-    // req.session.logged_in = true // delete before production
-    // req.session.user_id = 2
 
     // If the user is not logged in, redirect the request to the login route
     if (!req.session.logged_in) {
