@@ -3,11 +3,28 @@ const router = require('express').Router();
 const { Review } = require('../../models');
 const withAuth = require('../../utils/auth');
 
+router.get('/', async (req, res) => {
+  try{
+    const reviewData = await Review.findAll()
+    if(!reviewData){
+    res
+      .status(400)
+      .json({message: 'No movies'})
+    } 
+    res.json(reviewData)
+  }
+  
+  catch(err){
+    res.status(500).json(err)
+  }
+});
+
 router.post('/', withAuth, async (req, res) => {
   try {
     const newReview = await Review.create({
       ...req.body,
       user_id: req.session.user_id,
+      movie_id: location.params.id
     });
 
     res.status(200).json(newReview);
