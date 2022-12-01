@@ -16,9 +16,13 @@ Movie.hasMany(Review, {
     onDelete: 'CASCADE'
 });
 
-Movie.hasMany(Tag, {
-    foreignKey: 'movie_id'
+Movie.belongsTo(Tag, {
+    foreignKey: 'tag_id'
 });
+
+Tag.hasMany(Movie, {
+    foreignKey: 'tag_id'
+})
 
 Review.belongsTo(Movie, {
     foreignKey: 'movie_id'

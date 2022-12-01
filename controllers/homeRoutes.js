@@ -17,18 +17,17 @@ router.get("/", async (req, res) => {
         },
       ],
     });
-    // res.render('homepage');
+    console.log(movieData)
     const movies = movieData.map((movie) => movie.get({ plain: true }));
     res.render("homepage", {
       movies,
-      //login?
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
-router.get("/movie/:id", async (req, res) => {
+router.get("/movie/:id",withAuth, async (req, res) => {
   try {
     const movieData = await Movie.findByPk(req.params.id, {
       include: [
