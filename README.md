@@ -22,9 +22,13 @@
   ## Usage
   The site is free to use, simply follow the deployed link and create an account.
   PLEASE NOTE THIS IS A STUDENT PROJECT AND THE SITE HAS NO SECURITY. WE ARE NOT RESPONSIBLE FOR ANY INFORMATION YOU MAY CHOOSE TO GIVE TO THE SITE.
+
+  Repo: https://github.com/Bryandalton/Ripened_Potatoes
   
-  ## License Information Link
-  
-  
-  ## Contact
-  
+ ## Credits
+
+Bryan Dalton, https://github.com/Bryandalton
+
+## License
+
+MIT license (see Repo)
