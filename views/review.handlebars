@@ -1,7 +1,33 @@
 <!-- Review title header, review body -->
-<section>
-    <header>Username</header>
-    <p>title</p>
-    <p>description</p>
-    <p>rating</p>
-</section>
+<div>
+    <h3>Create a New Review</h3>
+
+    <form class="new-review-form">
+            <div>
+                <label>Review Title</label><br>
+                <input type="text" id="review-title" name="review-title" placeholder="Review Title">
+            </div>
+            <div>
+                <label>Review Description</label><br>
+                <textarea id="review-description" name="review-description" placeholder="Write your review here..."></textarea>
+            </div>
+            <div>
+                <p>How many potatoes would you rate this film out of ten?</p>
+                <select id="review-rating" name="rating">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="./js/profile.js"></script>
