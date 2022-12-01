@@ -1,9 +1,10 @@
 <!-- section with homepage content (chart?) -->
-
-<h1> homepage ayyy </h1>
+<section class ="homepage">
+<h1> Welcome to Ripened Potatoes! </h1>
 
 {{#each movies as |movie| }}
 <h4><a href="/movie/{{movie.id}}">{{movie.title}}</h4></a><br>
 <p>{{tag.tag_name}}</p><br>
 <p>{{movie.description}}</p>
 {{/each}}
+</section>
