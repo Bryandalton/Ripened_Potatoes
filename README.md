@@ -29,6 +29,8 @@
 
 Bryan Dalton, https://github.com/Bryandalton
 
+Bernie Migo, https://github.com/bmigo
+
 ## License
 
 MIT license (see Repo)
