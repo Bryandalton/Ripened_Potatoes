@@ -1,4 +1,4 @@
-const newFormHandler = async (event) => {
+const newMovieFormHandler = async (event) => {
     event.preventDefault();
   
     const title = document.querySelector('#movie-title').value.trim();
@@ -22,6 +22,27 @@ const newFormHandler = async (event) => {
     }
   };
 
+  const delButtonHandler = async (event) => {
+    if (event.target.hasAttribute('data-id')) {
+      const id = event.target.getAttribute('data-id');
+  
+      const response = await fetch(`/api/reviews/${id}`, {
+        method: 'DELETE',
+      });
+  
+      if (response.ok) {
+        document.location.replace('/profile');
+      } else {
+        alert('Failed to delete review');
+      }
+    }
+  };
+
+
   document
     .querySelector('.new-movie-form')
-    .addEventListener('submit', newFormHandler);
+    .addEventListener('submit', newMovieFormHandler);
+
+    document
+    .querySelector('.review-list')
+    .addEventListener('click', delButtonHandler);

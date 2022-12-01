@@ -21,12 +21,13 @@ router.get('/', async (req, res) => {
 //creates a new user
 router.post('/', async (req, res) => {
   try {
+    console.log(req.body);
     const userData = await User.create(req.body);
 
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
-
+      console.log(userData);
       res.status(200).json(userData);
     });
   } catch (err) {
