@@ -31,7 +31,7 @@
           <a class="mdl-navigation__link" href="/profile" style="color:#bd8e5e">PROFILE</a>
           {{#if logged_in}}
           {{!-- <a class="mdl-navigation__link" href="/profile" style="color:#bd8e5e">PROFILE</a> --}}
-          <button class="no-button" id="logout">logout</button>
+          <button class="no-button mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" id="logout" style="background-color:#1d3f3f; color: #bd8e5e;">LOG OUT</button>
           {{else}}
           <a class="mdl-navigation__link" href="/login" style="color:#bd8e5e">LOGIN</a>
           {{/if}}
@@ -78,7 +78,7 @@
         taters <br> </p>
   </main>
 
-  <footer class="mdl-mini-footer">
+  <footer class="mdl-mini-footer" style="background-color:#2F2C37;">
     <div class="mdl-mini-footer__leftsection">
       <div class="mdl-logo">Created by</div>
         <p>Sophie Carr, Bryan Dalton, and Bernie Migo
@@ -90,7 +90,7 @@
       <p><img src="/images/cutePotato.png" alt="cute potato" id="headerImg"> &nbsp; So bad, it's good! </p>
     </div>
 
-    </footer>
+  </footer>
 
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
