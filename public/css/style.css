@@ -4,6 +4,19 @@ body {
     height: 90vh;
 }
 
+.custom-select {
+    position:relative;
+    font-family: 'Lato', sans-serif;
+    color:black;
+}
+
+.custom-select select {
+    color:#1d3f3f;
+    background-color:#bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+}
+
 .loginsection button {
     background-color: #1d3f3f;
     color: black;
@@ -15,9 +28,9 @@ header a{
 }
 
 .homepage h1 {
-    /* margin: 0;
-    font-size: 2em; */
+    font-size: 50px;
     font-family: 'Lato', sans-serif;
+    text-align:center;
 }
 
 .loginsection h2 {
@@ -62,6 +75,19 @@ input[type=password]{
     padding: 20px;
     width: 200px;
     height: 15px;
+}
+textarea{
+    background-color: #bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+    color: #1d3f3f;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+textarea:focus{
+    border: 3px solid black;
+    outline: none;
 }
 input[type=text]:focus{
     border: 3px solid black;
@@ -132,3 +158,12 @@ main {
 .profilepage {
     text-align:center;
 }
+
+.profilepage label{
+    font-size: 20px;
+}
+
+.profilepage p {
+    font-size: 20px;
+}
+
