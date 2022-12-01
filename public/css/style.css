@@ -140,6 +140,7 @@ input[type=password]:focus{
 footer {
     /* background-color:#2F2C37; */
     /* background :url("/images/taters.jpg"); */
+    /* removed bottom 0 */
     color: #bd8e5e;
     font-size: 20px;
     width: auto;
