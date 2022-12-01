@@ -3,18 +3,19 @@
     <div><h2>Welcome, {{name}}!</h2></div>
 
     <div>
-        <h3>Start a review Thread</h3>
+        <h3>Start a new review thread:</h3>
 
         <form class="new-movie-form">
             <div>
-                <label>Movie Title</label><br>
+                <label>Movie Title</label><br><br>
                 <input type="text" id="movie-title" name="movie-title" placeholder="Movie Title">
-            </div>
+            </div> <br>
             <div>
-                <label>Movie Description</label><br>
+                <label>Movie Description</label><br><br>
                 <textarea id="movie-description" name="movie-description" placeholder="Write your synopsis here..."></textarea>
-            </div>
-            <div>
+            </div> <br>
+
+            <div class="custom-select">
                 <p>Add a tag</p>
                 <select id="tag" name="rating">
                     <option value="1">Horror</option>
@@ -22,8 +23,9 @@
                     <option value="3">Comedy</option>
                     <option value="4">So bad it's good!</option>
                 </select>
-            </div>
-            <button type="submit">Post</button>
+            </div> <br>
+
+            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="background-color:#1d3f3f; color: #bd8e5e;">Post</button>
         </form>
     </div>
 

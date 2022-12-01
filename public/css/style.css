@@ -4,19 +4,33 @@ body {
     height: 90vh;
 }
 
+.custom-select {
+    position:relative;
+    font-family: 'Lato', sans-serif;
+    color:black;
+}
+
+.custom-select select {
+    color:#1d3f3f;
+    background-color:#bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+}
+
 .loginsection button {
     background-color: #1d3f3f;
     color: black;
 }
+
 
 header a{
     text-decoration: none;
 }
 
 .homepage h1 {
-    /* margin: 0;
-    font-size: 2em; */
+    font-size: 50px;
     font-family: 'Lato', sans-serif;
+    text-align:center;
 }
 
 .loginsection h2 {
@@ -62,6 +76,19 @@ input[type=password]{
     width: 200px;
     height: 15px;
 }
+textarea{
+    background-color: #bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+    color: #1d3f3f;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+textarea:focus{
+    border: 3px solid black;
+    outline: none;
+}
 input[type=text]:focus{
     border: 3px solid black;
     outline: none;
@@ -76,7 +103,7 @@ input[type=password]:focus{
 }
 
 footer {
-    background-color:#504a3e;
+    background-color:#2F2C37;
     color: #bd8e5e;
     font-size: 20px;
     width: auto;
@@ -88,6 +115,9 @@ footer {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
+footer.app-bg {
+    background-color: red !important;
+  }
 
 nav a:hover {
     background-color: #1d3f3f;
@@ -116,3 +146,24 @@ main {
     font-family: 'Lato', sans-serif;
     padding-left: 20px;
 }
+
+.profilepage h2 {
+    font-family: 'Lato', sans-serif;
+}
+
+.profilepage h3{
+    font-family: 'Lato', sans-serif;
+}
+
+.profilepage {
+    text-align:center;
+}
+
+.profilepage label{
+    font-size: 20px;
+}
+
+.profilepage p {
+    font-size: 20px;
+}
+
