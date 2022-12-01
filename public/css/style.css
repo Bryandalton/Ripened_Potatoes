@@ -4,8 +4,9 @@ body {
     height: 90vh;
 }
 
-button {
-    color: white;
+.loginsection button {
+    background-color: #1d3f3f;
+    color: black;
 }
 
 header a{
@@ -16,6 +17,10 @@ header h1 {
     margin: 0;
     font-size: 2em;
     font-family: 'Lato', sans-serif;
+}
+
+.loginsection h2 {
+    font-family:'Lato', sans-serif;
 }
 
 header {
