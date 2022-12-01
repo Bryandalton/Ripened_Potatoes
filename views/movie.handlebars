@@ -1,14 +1,14 @@
 <!-- page for movie with its tags and reviews -->
 <section>
-    <h2 class="movie-title-line">{{title}}</h2> <p>{{tag.tag_name}}</p>
+    <h2 class="movie-title-line">{{title}}</h2>
     <!--movie poster-->
     <p>{{description}}</p>
 
     <!--reviews: user_id, description, rating-->
     {{#each reviews as |review|}}
     <div class="review-box">
-        <p class="review-title-line">{{title}} by {{user.name}} </p>
-        <p>{{description}} a generic review</p>
+        <p class="review-title-line">{{review.title}} by {{user.name}} </p>
+        <p>{{review.description}} a generic review</p>
     </div>
     {{/each}}
 </section> 
