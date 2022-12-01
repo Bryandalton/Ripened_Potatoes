@@ -39,7 +39,7 @@ input[type=text]{
     background-color: #bd8e5e;
     border-radius: 18px;
     border: 2px solid #bd8e5e;
-    color: white;
+    color: #1d3f3f;
     padding: 20px;
     width: 200px;
     height: 15px;
@@ -48,7 +48,7 @@ input[type=email]{
     background-color: #bd8e5e;
     border-radius: 18px;
     border: 2px solid #bd8e5e;
-    color: white;
+    color: #1d3f3f;
     padding: 20px;
     width: 200px;
     height: 15px;
@@ -57,7 +57,7 @@ input[type=password]{
     background-color: #bd8e5e;
     border-radius: 18px;
     border: 2px solid #bd8e5e;
-    color: white;
+    color: #1d3f3f;
     padding: 20px;
     width: 200px;
     height: 15px;
@@ -78,7 +78,7 @@ input[type=password]:focus{
 footer {
     background-color:#504a3e;
     color: #bd8e5e;
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
     bottom: 0;
     height: 10vh;
