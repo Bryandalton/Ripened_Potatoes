@@ -3,20 +3,31 @@ body {
     background-color:#817d6b;
     height: 90vh;
 }
-/* test */
+
+.loginsection button {
+    background-color: #1d3f3f;
+    color: black;
+}
+
 header a{
     text-decoration: none;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2em;
+.homepage h1 {
+    /* margin: 0;
+    font-size: 2em; */
+    font-family: 'Lato', sans-serif;
+}
+
+.loginsection h2 {
+    font-family:'Lato', sans-serif;
 }
 
 header {
     width: 100vw;
     bottom:0;
     height: 5vh;
+    font-family: 'Lato', sans-serif;
 }
 
 #headerImg {
@@ -24,17 +35,58 @@ header {
     max-height: 50px;
 }
 
+input[type=text]{
+    background-color: #bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+    color: #1d3f3f;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+input[type=email]{
+    background-color: #bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+    color: #1d3f3f;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+input[type=password]{
+    background-color: #bd8e5e;
+    border-radius: 18px;
+    border: 2px solid #bd8e5e;
+    color: #1d3f3f;
+    padding: 20px;
+    width: 200px;
+    height: 15px;
+}
+input[type=text]:focus{
+    border: 3px solid black;
+    outline: none;
+}
+input[type=email]:focus{
+    border: 3px solid black;
+    outline: none;
+}
+input[type=password]:focus{
+    border: 3px solid black;
+    outline: none;
+}
+
 footer {
     background-color:#504a3e;
     color: #bd8e5e;
-    font-size: 30px;
+    font-size: 20px;
     width: 100%;
     bottom: 0;
-    height: 5vh;
+    height: 10vh;
     padding-top: 20px;
     position: relative;
     justify-content: center;
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 nav a:hover {
@@ -56,4 +108,10 @@ film-card-square > .mdl-card__title {
     column-rule-style: solid;
     column-rule-color: #504a3e;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+main {
+    font-family: 'Lato', sans-serif;
 }
