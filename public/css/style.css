@@ -208,3 +208,7 @@ main {
     text-decoration: none;
     font-size: 2em;
 }
+
+::placeholder {
+    color:#3A3222;
+}
