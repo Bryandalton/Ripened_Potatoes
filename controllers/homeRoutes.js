@@ -60,6 +60,39 @@ router.get("/movie/:id",withAuth, async (req, res) => {
   }
 });
 
+router.get('/add_review/:id', withAuth, async (req, res) => {
+  try {
+    const movieData = await Movie.findByPk(req.params.id, {
+      include: [
+        {
+          model: Review,
+          attributes: ["title", "description", "rating", "user_id"],
+          include: [
+            {
+              model: User,
+              attributes: ["name"]
+            }
+          ]
+        },
+        {
+          model: Tag,
+          attributes: ["tag_name"],
+        },
+      ],
+    });
+
+    const movie = movieData.get({ plain: true });
+    console.log('movie is', movie);
+
+    res.render("review", {
+      ...movie,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 router.get("/profile", withAuth, async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
