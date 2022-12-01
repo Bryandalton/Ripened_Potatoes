@@ -26,6 +26,11 @@ header {
     max-height: 50px;
 }
 
+input[type=text]{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
 footer {
     background-color:#504a3e;
     color: #bd8e5e;
