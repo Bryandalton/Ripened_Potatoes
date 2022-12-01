@@ -34,6 +34,7 @@ header a{
     color: white;
     padding: 20px;
     width:auto;
+    font-weight:bold;
     
 }
 
@@ -42,11 +43,23 @@ header a{
     align-items: center;
     color: white;
     font-size: 1.5em;
+    /* font-family: 'Lato', sans-serif; */
 }
 
 .homepage a {
     text-decoration: none;
     color: white;
+}
+
+
+.homepage h4 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.homepage p {
+    margin-left:50px;
+    margin-right: 50px;
 }
 
 .homepage a:hover {
@@ -180,6 +193,7 @@ main {
 .profilepage h2 {
     font-family: 'Lato', sans-serif;
     padding-top: 20px;
+    font-weight:bold;
 }
 
 .profilepage h3{
@@ -190,9 +204,10 @@ main {
     background: rgba(0,0,0,0.5);
     text-align:center;
     color:white;
-    height:90vh;
     margin-top: 20px;
+    justify-content:flex-start;
 }
+
 
 .profilepage label{
     font-size: 20px;
@@ -202,9 +217,56 @@ main {
     font-size: 20px;
     color:white;
 }
+.profilepage button {
+    background-color:#1d3f3f; 
+    color: #bd8e5e;
+}
 
 .main-title {
     color: white;
     text-decoration: none;
     font-size: 2em;
+}
+
+::placeholder {
+    color:#3A3222;
+    font-family: 'Lato', sans-serif;
+}
+
+.review h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+.review {
+    text-align:center;
+    padding-bottom: 100px;
+}
+
+.review-list {
+    padding-bottom: 100px;
+}
+
+.movie h3{
+    font-style: italic;
+    font-size:25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.movie p {
+    font-size:medium;
+}
+
+.movie a {
+    color: #1d3f3f;
+    font-size: large;
+}
+
+.movie{
+    padding-bottom: 200px;
+    font-family: 'Lato', sans-serif;
+}
+
+.movie h2 {
+    color: #3A3222;
+    font-family: 'Lato', sans-serif;
 }

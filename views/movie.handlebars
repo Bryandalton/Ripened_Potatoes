@@ -1,15 +1,16 @@
 <!-- page for movie with its tags and reviews -->
-<section>
+<section class="movie">
     <h2 class="movie-title-line">{{title}}</h2>
     <!--movie poster-->
-    <p>{{description}}</p>
+    <h3>{{description}}</h3>
     <a href="/add_review/{{id}}">Write a review about this movie</a>
 
     <!--reviews: user_id, description, rating-->
     {{#each reviews as |review|}}
     <div class="review-box">
-        <p class="review-title-line">{{title}} by {{user.name}} </p>
-        <p>{{description}}</p>
+        <br>
+        <h4 class="review-title-line" style="font-weight:bolder"> {{title}} by {{user.name}} </h4>
+        <p><blockquote>{{description}}</blockquote></p>
         
     </div>
     {{/each}}
