@@ -2,19 +2,16 @@
     {
         "title": "The Room",
         "description":"Johnny is a successful bank executive who lives quietly in a San Francisco townhouse with his fiancée, Lisa. One day, putting aside any scruple, she seduces Johnny's best friend, Mark. From there, nothing will be the same again." ,
-        "tag_id": 4,
-        "review_id": null
+        "tag_id": 4
     },
     {
         "title": "The Happening",
         "description":"A science teacher, his wife, and a young girl struggle to survive a plague that causes those infected to commit suicide." ,
-        "tag_id": 1,
-        "review_id": null
+        "tag_id": 1
     },
     {
         "title": "Bee Movie",
         "description":"A bee is disillusioned at his lone career choice: making honey." ,
-        "tag_id": 3,
-        "review_id": null
+        "tag_id": 3
     }
 ]

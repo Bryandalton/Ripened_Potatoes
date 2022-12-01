@@ -3,7 +3,7 @@ const { User, Movie, Review, Tag } = require("../models");
 
 const userData = require("./userData.json");
 const movieData = require("./movieData.json");
-// const reviewData = require();
+const reviewData = require('./reviewData.json');
 const tagData = require("./tagData.json");
 
 const seedDatabase = async () => {
@@ -20,7 +20,10 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
-
+await Review.bulkCreate(reviewData, {
+  individualHooks: true,
+    returning: true,
+})
   process.exit(0);
 };
 
