@@ -3,33 +3,27 @@
     <div><h2>Welcome, {{name}}!</h2></div>
 
     <div>
-        <h3>Create a New Review</h3>
+        <h3>Start a review Thread</h3>
 
-        <form class="new-review-form">
+        <form class="new-movie-form">
             <div>
-                <label>Review Title</label><br>
-                <input type="text" id="review-title" name="review-title" placeholder="Review Title">
+                <label>Movie Title</label><br>
+                <input type="text" id="movie-title" name="movie-title" placeholder="Movie Title">
             </div>
             <div>
-                <label>Review Description</label><br>
-                <textarea id="review-description" name="review-description" placeholder="Write your review here..."></textarea>
+                <label>Movie Description</label><br>
+                <textarea id="movie-description" name="movie-description" placeholder="Write your synopsis here..."></textarea>
             </div>
             <div>
-                <p>How many potatoes would you rate this film out of ten?</p>
-                <select id="review-rating" name="rating">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
+                <p>Add a tag</p>
+                <select id="tag" name="rating">
+                    <option value="1">Horror</option>
+                    <option value="2">Drama</option>
+                    <option value="3">Comedy</option>
+                    <option value="4">So bad it's good!</option>
                 </select>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit">Post</button>
         </form>
     </div>
 
@@ -49,5 +43,6 @@
     {{/each}}
   </div>
   {{/if}}
-
 </div>
+<script src="/js/profile.js"></script>
+<script src="/js/movie.js"></script>
