@@ -124,6 +124,7 @@ footer {
     justify-content: center;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    margin-top: auto;
 }
 .foot {
     background-color: #2F2C37 !important;
@@ -151,6 +152,8 @@ film-card-square > .mdl-card__title {
     column-rule-color: #504a3e;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    margin-top:70px;
+    height: 60vh;
 }
 
 
@@ -163,6 +166,7 @@ main {
 
 .profilepage h2 {
     font-family: 'Lato', sans-serif;
+    padding-top: 20px;
 }
 
 .profilepage h3{
@@ -173,6 +177,8 @@ main {
     background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("/images/taters.jpg");
     text-align:center;
     color:white;
+    height:90vh;
+    margin-top: 20px;
 }
 
 .profilepage label{
@@ -183,4 +189,3 @@ main {
     font-size: 20px;
     color:white;
 }
-
