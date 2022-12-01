@@ -31,6 +31,15 @@ header a{
     font-size: 50px;
     font-family: 'Lato', sans-serif;
     text-align:center;
+    color: white;
+    padding: 20px;
+    width:auto;
+    
+}
+
+.homepage {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("/images/taters.jpg");
+    align-items: center;
 }
 
 .loginsection h2 {
@@ -103,7 +112,8 @@ input[type=password]:focus{
 }
 
 footer {
-    background-color:#2F2C37;
+    /* background-color:#2F2C37; */
+    /* background :url("/images/taters.jpg"); */
     color: #bd8e5e;
     font-size: 20px;
     width: auto;
@@ -115,9 +125,11 @@ footer {
     text-align: center;
     font-family: 'Lato', sans-serif;
 }
-footer.app-bg {
-    background-color: red !important;
+.foot {
+    background-color: #2F2C37 !important;
   }
+
+
 
 nav a:hover {
     background-color: #1d3f3f;
@@ -144,7 +156,9 @@ film-card-square > .mdl-card__title {
 
 main {
     font-family: 'Lato', sans-serif;
+    padding-right: 20px;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .profilepage h2 {
@@ -156,7 +170,9 @@ main {
 }
 
 .profilepage {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%),url("/images/taters.jpg");
     text-align:center;
+    color:white;
 }
 
 .profilepage label{
@@ -165,5 +181,6 @@ main {
 
 .profilepage p {
     font-size: 20px;
+    color:white;
 }
 
