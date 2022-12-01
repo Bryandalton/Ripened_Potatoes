@@ -1,7 +1,6 @@
 const router = require("express").Router();
 const { User, Review, Movie, Tag } = require("../models");
 const withAuth = require("../utils/auth");
-// const { move } = require("./api");
 
 router.get("/", async (req, res) => {
   try {

@@ -1,273 +1,266 @@
 body {
-    margin: 0;
-    background-color:#817d6b;
-    height: 90vh;
+  margin: 0;
+  background-color: #817d6b;
+  height: 90vh;
 }
 
 .custom-select {
-    position:relative;
-    font-family: 'Lato', sans-serif;
-    color:black;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: black;
 }
 
 .custom-select select {
-    color:#1d3f3f;
-    background-color:#bd8e5e;
-    border-radius: 18px;
-    border: 2px solid #bd8e5e;
+  color: #1d3f3f;
+  background-color: #bd8e5e;
+  border-radius: 18px;
+  border: 2px solid #bd8e5e;
 }
 
 .loginsection button {
-    background-color: #1d3f3f;
-    color: black;
+  background-color: #1d3f3f;
+  color: black;
 }
 
-
-header a{
-    text-decoration: none;
+header a {
+  text-decoration: none;
 }
 
 .homepage h1 {
-    font-size: 50px;
-    font-family: 'Lato', sans-serif;
-    text-align:center;
-    color: white;
-    padding: 20px;
-    width:auto;
-    font-weight:bold;
-    
+  font-size: 50px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  width: auto;
+  font-weight: bold;
 }
 
 .homepage {
-    background: rgba(0,0,0,0.5);
-    align-items: center;
-    color: white;
-    font-size: 1.5em;
-    /* font-family: 'Lato', sans-serif; */
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+  /* font-family: 'Lato', sans-serif; */
 }
 
 .homepage a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
-
 .homepage h4 {
-    margin-left: 50px;
-    margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .homepage p {
-    margin-left:50px;
-    margin-right: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .homepage a:hover {
-    text-decoration: underline;
-    text-shadow: 5px 5px 10px black;;
-
+  text-decoration: underline;
+  text-shadow: 5px 5px 10px black;
 }
 
 .loginsection h2 {
-    font-family:'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 header {
-    width: 100vw;
-    bottom:0;
-    height: 5vh;
-    font-family: 'Lato', sans-serif;
+  width: 100vw;
+  bottom: 0;
+  height: 5vh;
+  font-family: "Lato", sans-serif;
 }
 
 #headerImg {
-    max-width: 50px;
-    max-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
-input[type=text]{
-    background-color: #bd8e5e;
-    border-radius: 18px;
-    border: 2px solid #bd8e5e;
-    color: #1d3f3f;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+input[type="text"] {
+  background-color: #bd8e5e;
+  border-radius: 18px;
+  border: 2px solid #bd8e5e;
+  color: #1d3f3f;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
-input[type=email]{
-    background-color: #bd8e5e;
-    border-radius: 18px;
-    border: 2px solid #bd8e5e;
-    color: #1d3f3f;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+input[type="email"] {
+  background-color: #bd8e5e;
+  border-radius: 18px;
+  border: 2px solid #bd8e5e;
+  color: #1d3f3f;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
-input[type=password]{
-    background-color: #bd8e5e;
-    border-radius: 18px;
-    border: 2px solid #bd8e5e;
-    color: #1d3f3f;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+input[type="password"] {
+  background-color: #bd8e5e;
+  border-radius: 18px;
+  border: 2px solid #bd8e5e;
+  color: #1d3f3f;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
-textarea{
-    background-color: #bd8e5e;
-    border-radius: 18px;
-    border: 2px solid #bd8e5e;
-    color: #1d3f3f;
-    padding: 20px;
-    width: 200px;
-    height: 15px;
+textarea {
+  background-color: #bd8e5e;
+  border-radius: 18px;
+  border: 2px solid #bd8e5e;
+  color: #1d3f3f;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
 }
-textarea:focus{
-    border: 3px solid black;
-    outline: none;
+textarea:focus {
+  border: 3px solid black;
+  outline: none;
 }
-input[type=text]:focus{
-    border: 3px solid black;
-    outline: none;
+input[type="text"]:focus {
+  border: 3px solid black;
+  outline: none;
 }
-input[type=email]:focus{
-    border: 3px solid black;
-    outline: none;
+input[type="email"]:focus {
+  border: 3px solid black;
+  outline: none;
 }
-input[type=password]:focus{
-    border: 3px solid black;
-    outline: none;
+input[type="password"]:focus {
+  border: 3px solid black;
+  outline: none;
 }
 
 footer {
-    /* background-color:#2F2C37; */
-    /* background :url("/images/taters.jpg"); */
-    /* removed bottom 0 */
-    color: #bd8e5e;
-    font-size: 20px;
-    width: auto;
-    height: 6vh;
-    padding-top: 20px;
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    margin-top: auto;
+  /* background-color:#2F2C37; */
+  /* background :url("/images/taters.jpg"); */
+  /* removed bottom 0 */
+  color: #bd8e5e;
+  font-size: 20px;
+  width: auto;
+  height: 6vh;
+  padding-top: 20px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: auto;
 }
 .foot {
-    background-color: #2F2C37 !important;
-  }
-
-
+  background-color: #2f2c37 !important;
+}
 
 nav a:hover {
-    background-color: #1d3f3f;
-    color: #bd8e5e;
+  background-color: #1d3f3f;
+  color: #bd8e5e;
 }
 
 film-card-square.mdl-card {
-    width: 320px;
-    height: 320px;
-  }
+  width: 320px;
+  height: 320px;
+}
 film-card-square > .mdl-card__title {
-    color: bd8e5e;
-    background-color: #1D3F3F;
-  }
-
-.loginsection {
-    column-count: 2;
-    column-rule-style: solid;
-    column-rule-color: #504a3e;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    margin-top:70px;
-    height: 73.5vh;
+  color: bd8e5e;
+  background-color: #1d3f3f;
 }
 
+.loginsection {
+  column-count: 2;
+  column-rule-style: solid;
+  column-rule-color: #504a3e;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  margin-top: 70px;
+  height: 73.5vh;
+}
 
 main {
-    font-family: 'Lato', sans-serif;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  height: 77.7vh;
 }
 
 .profilepage h2 {
-    font-family: 'Lato', sans-serif;
-    padding-top: 20px;
-    font-weight:bold;
+  font-family: "Lato", sans-serif;
+  padding-top: 20px;
+  font-weight: bold;
 }
 
-.profilepage h3{
-    font-family: 'Lato', sans-serif;
+.profilepage h3 {
+  font-family: "Lato", sans-serif;
 }
 
 .profilepage {
-    background: rgba(0,0,0,0.5);
-    text-align:center;
-    color:white;
-    margin-top: 20px;
-    justify-content:flex-start;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  justify-content: flex-start;
 }
 
-
-.profilepage label{
-    font-size: 20px;
+.profilepage label {
+  font-size: 20px;
 }
 
 .profilepage p {
-    font-size: 20px;
-    color:white;
+  font-size: 20px;
+  color: white;
 }
 .profilepage button {
-    background-color:#1d3f3f; 
-    color: #bd8e5e;
+  background-color: #1d3f3f;
+  color: #bd8e5e;
 }
 
 .main-title {
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 ::placeholder {
-    color:#3A3222;
-    font-family: 'Lato', sans-serif;
+  color: #3a3222;
+  font-family: "Lato", sans-serif;
 }
 
 .review h3 {
-    font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 .review {
-    text-align:center;
-    padding-bottom: 100px;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 .review-list {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
-.movie h3{
-    font-style: italic;
-    font-size:25px;
-    font-family: 'Lato', sans-serif;
+.movie h3 {
+  font-style: italic;
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
 }
 
 .movie p {
-    font-size:medium;
+  font-size: medium;
 }
 
 .movie a {
-    color: #1d3f3f;
-    font-size: large;
+  color: #1d3f3f;
+  font-size: large;
 }
 
-.movie{
-    padding-bottom: 200px;
-    font-family: 'Lato', sans-serif;
+.movie {
+  padding-bottom: 200px;
+  font-family: "Lato", sans-serif;
 }
 
 .movie h2 {
-    color: #3A3222;
-    font-family: 'Lato', sans-serif;
-    font-weight: bolder;
+  color: #3a3222;
+  font-family: "Lato", sans-serif;
+  font-weight: bolder;
 }
