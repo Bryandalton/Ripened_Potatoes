@@ -1,4 +1,4 @@
-  # Project 2: Ripened Potatoes - A Bad Movie Review Site
+  # Ripened Potatoes - A Bad Movie Review Site
 
   ## Table of Contents
   - [Description](#description)
@@ -12,14 +12,6 @@
   ## Description
   Welcome to Ripened Potatoes! A place where you can gush all about your favorite bad movies! There are tons of websites dedicated to sharing movie reviews about your favorite movie, but what about the films you love to hate? Ripened Potatoes is a place where worst comes to worst in all its glory. Whether you want to suggest a movie that’s a waste of time to that coworker who just won’t stop talking about Quentin Tarantino, or you just want to gush about the perfect imperfection that is The Room, Ripened Potatoes has you covered. These days, film buffs and movie critics are quick to whip up intellectual analyses about any film, but the beauty of Ripened Potatoes is that you can be seriously unserious.
 
-  ## Deployed Site
-
-  https://ripened-potatos.herokuapp.com/
-
-  ## Screenshot
-
-  <img src="./public/images/screenshot.png" width=800px>
-  
   ## Technologies Used
   Node.js\
   Express.js\
@@ -34,7 +26,12 @@
   PLEASE NOTE THIS IS A STUDENT PROJECT AND THE SITE HAS NO SECURITY. WE ARE NOT RESPONSIBLE FOR ANY PERSONAL INFORMATION YOU MAY CHOOSE TO GIVE TO THE SITE.
 
 
+![screenshot](./public/images/Ripened-potatos-screenshot.JPG)
+
   Repo: https://github.com/Bryandalton/Ripened_Potatoes
+
+  Live link: https://ripened-potatos.herokuapp.com/
+
   
   ## Credits
 

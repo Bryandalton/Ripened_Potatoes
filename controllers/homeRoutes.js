@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
     });
     console.log(movieData)
     const movies = movieData.map((movie) => movie.get({ plain: true }));
-    res.render("homepage", {
+    res.render("homePage", {
       movies,
     });
   } catch (err) {
