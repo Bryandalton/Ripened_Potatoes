@@ -23,6 +23,8 @@
   The site is free to use, simply follow the deployed link and create an account.
   PLEASE NOTE THIS IS A STUDENT PROJECT AND THE SITE HAS NO SECURITY. WE ARE NOT RESPONSIBLE FOR ANY INFORMATION YOU MAY CHOOSE TO GIVE TO THE SITE.
 
+![screenshot](./public/images/Ripened-potatos-screenshot.JPG)
+
   Repo: https://github.com/Bryandalton/Ripened_Potatoes
   
  ## Credits
