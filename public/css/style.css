@@ -133,23 +133,22 @@ input[type="password"]:focus {
   outline: none;
 }
 
-footer {
-  /* background-color:#2F2C37; */
-  /* background :url("/images/taters.jpg"); */
-  /* removed bottom 0 */
+/* footer {
   color: #bd8e5e;
   font-size: 20px;
   width: auto;
   height: 6vh;
   padding-top: 20px;
-  position: relative;
   justify-content: center;
   text-align: center;
   font-family: "Lato", sans-serif;
   margin-top: auto;
-}
+} */
 .foot {
   background-color: #2f2c37 !important;
+  position: absolute;
+  bottom: 0;
+  width: 98.35%;
 }
 
 nav a:hover {
